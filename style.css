@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+:root {
+    /* colors */
+    --background-header-color: #012D63;
+    --main-text-color: #FFFFFF;
+    --header-text-color: #C7C7C7;
+    --header-language-color: #DCDCDC;
+    --main-data-color: #D8D8D8;
+    --adress-color: #959595;
+
+    /* fonts */
+    --main-fonts: 'Roboto', sans-serif;
+    ;
+    --logo-footer-fonts: 'PT Serif', serif;
+    --title-main-fonts: 'Playfair Display', serif;
+}
+
+/*--------------------------------------------- header --------------------------------------------- */
+.header {
+    background-color: var(--background-header-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 16px;
+    margin-bottom: 17px;
+    width: 100px;
+    height: 60px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.active {
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+.menu-items {
+    color: var(--header-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.item_span {
+    color: var(--header-language-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.active_language {
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*--------------------------------------------- main ---------------------------------------------*/
