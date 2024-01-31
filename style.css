@@ -16,6 +16,7 @@ html {
     --header-language-color: #DCDCDC;
     --main-data-color: #D8D8D8;
     --adress-color: #959595;
+    --button-color: #8E32C6;
 
     /* fonts */
     --main-fonts: 'Roboto', sans-serif;
@@ -80,7 +81,7 @@ ul {
     line-height: normal;
 }
 
-.item_span {
+.item_a {
     color: var(--header-language-color);
     font-family: var(--main-fonts);
     font-size: 24px;
@@ -99,3 +100,75 @@ ul {
 }
 
 /*--------------------------------------------- main ---------------------------------------------*/
+/*--------------------------------------------- section_1 ---------------------------------------------*/
+.main_top {
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    height: 858px;
+}
+
+.inner-image {
+    margin-top: 94px;
+    width: 160px;
+    height: 120px;
+}
+
+.inner_h3 {
+    color: var(--main-text-color);
+    font-family: var(--logo-footer-fonts);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 25px;
+    margin-top: -35px;
+}
+
+.title {
+    color: var(--main-text-color);
+    font-family: var(--title-main-fonts);
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -60px;
+}
+
+.inner_h2 {
+    color: var(--main-text-color);
+    font-family: var(--title-main-fonts);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inner_paragraph {
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inner_button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 10px;
+    width: 254px;
+    height: 67px;
+}
+
+.inner_button_paragraph {
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*--------------------------------------------- section_2 ---------------------------------------------*/
