@@ -2,6 +2,14 @@ html {
     box-sizing: border-box;
 }
 
+body,
+html {
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -20,7 +28,6 @@ html {
 
     /* fonts */
     --main-fonts: 'Roboto', sans-serif;
-    ;
     --logo-footer-fonts: 'PT Serif', serif;
     --title-main-fonts: 'Playfair Display', serif;
 }
@@ -42,6 +49,7 @@ ul {
 .container {
     max-width: 1100px;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 
 .logo {
@@ -123,7 +131,7 @@ ul {
     font-weight: 400;
     line-height: normal;
     margin-left: 25px;
-    margin-top: -35px;
+    margin-top: -29px;
 }
 
 .title {
@@ -134,6 +142,7 @@ ul {
     font-weight: 400;
     line-height: normal;
     margin-top: -60px;
+    margin-left: -32px;
 }
 
 .inner_h2 {
@@ -143,6 +152,8 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: -150px;
+    margin-left: -30px;
 }
 
 .inner_paragraph {
@@ -152,6 +163,8 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: -50px;
+    margin-bottom: 41px;
 }
 
 .inner_button {
@@ -160,15 +173,57 @@ ul {
     border-radius: 10px;
     width: 254px;
     height: 67px;
-}
-
-.inner_button_paragraph {
+    cursor: pointer;
     color: var(--main-text-color);
     font-family: var(--main-fonts);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0;
+    margin: 0;
 }
 
+.inner_button:hover {
+    background-color: #6f259d;
+    transition: 0.3s;
+
+}
+
+
+
 /*--------------------------------------------- section_2 ---------------------------------------------*/
+.section_benefits {
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 606px;
+}
+
+.inner_benefits {
+    padding-top: 105px;
+    margin-top: -20px;
+}
+
+.benefits_list {
+    display: flex;
+    gap: 145px;
+    border: 5px solid var(--button-color);
+    padding: 22px;
+}
+
+.items_name {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: var(--title-main-fonts);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line_benefits {
+    border-left: 1px solid var(--main-text-color);
+    border-right: 1px solid var(--main-text-color);
+}

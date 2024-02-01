@@ -32,17 +32,17 @@
                     <ul class="menu__list">
                         <li class="active">Main page</li>
                         <li class="menu-items">
-                            <a href="#">Benefits</a>
+                            <a href="#" class="scroll">Benefits</a>
                         </li>
                         <li class="menu-items">Advantages</li>
                         <li class="menu-items">
-                            <a href="#">Reviews</a>
+                            <a href="#" class="scroll">Reviews</a>
                         </li>
                         <li class="menu-items">
-                            <a href="#">Contacts</a>
+                            <a href="#" class="scroll">Contacts</a>
                         </li>
                         <li class="menu-items">
-                            <a href="#">Order</a>
+                            <a href="#" class="scroll">Order</a>
                         </li>
                     </ul>
                 </nav>
@@ -65,17 +65,60 @@
                     <h3 class="inner_h3">С&R</h3>
                     <h1 class="title">ColoRawe</h1>
                     <h2 class="inner_h2">Your dream Nike</h2>
-                    <p class="inner_paragraph">On this site you can find custom Nike sneakers of your dreams. 
-                        The original company caт`t create such beautiful 
-                        sneakers as we do.
-                        Good luck finding your way in the world of custom sneakers.</p>
-                    <a href="#" class="inner_a_button">
-                        <button class="inner_button"><p class="inner_button_paragraph">Buy my Nike</p></button>
-                    </a>
+                    <p class="inner_paragraph">On this site you can find custom Nike sneakers of your dreams.
+                        <br>The original company caт`t create such beautiful
+                        <br>sneakers as we do.
+
+                        <br>Good luck finding your way in the world of custom sneakers.
+                    </p>
+                    <button class="inner_button">
+                        Buy my Nike
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section_benefits">
+            <div class="container">
+                <div class="inner_benefits">
+                    <ul class="benefits_list">
+                        <li class="benefits_item">
+                            <h3 class="items_name">Premium
+                                Quality</h3>
+                            <img src="images/stars.svg" alt="stars">
+                        </li>
+                        <li class="benefits_item line_benefits">
+                            <img src="images/paints.svg" alt="paints">
+                            <h3 class="items_name">Indelible
+                                paint</h3>
+                        </li>
+                        <li class="benefits_item">
+                            <h3 class="items_name">Fast 
+                                shipping</h3>
+                            <img src="images/car.svg" alt="car">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollLinks = document.querySelectorAll('.scroll');
+
+            scrollLinks.forEach(function (scrollLink) {
+                scrollLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    var targetId = this.getAttribute('href').substring(1);
+                    var targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
