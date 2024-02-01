@@ -222,6 +222,10 @@ ul {
     font-weight: 400;
     line-height: normal;
 }
+.benefits_item{
+    margin: 0;
+    padding: 0;
+}
 
 .line_benefits {
     border-left: 1px solid var(--main-text-color);
