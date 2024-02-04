@@ -231,3 +231,19 @@ ul {
     border-left: 1px solid var(--main-text-color);
     border-right: 1px solid var(--main-text-color);
 }
+/*--------------------------------------------- section_3 ---------------------------------------------*/
+.section_reviews{
+    background-image: url(images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 520px;
+}
+.section_reviews_flower{
+    
+    transform: translate(0, 140px);
+}
+.reviews_title{
+    color: var(--main-text-color);
+    
+}
