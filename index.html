@@ -32,17 +32,17 @@
                     <ul class="menu__list">
                         <li class="active">Main page</li>
                         <li class="menu-items">
-                            <a href="#benefits" class="scroll">Benefits</a>
+                            <a href="#benefits" class="scroll link_button">Benefits</a>
                         </li>
                         <li class="menu-items">Advantages</li>
                         <li class="menu-items">
-                            <a href="#" class="scroll">Reviews</a>
+                            <a href="#reviews" class="scroll link_button">Reviews</a>
                         </li>
                         <li class="menu-items">
-                            <a href="#" class="scroll">Contacts</a>
+                            <a href="#contacts" class="scroll link_button">Contacts</a>
                         </li>
                         <li class="menu-items">
-                            <a href="#" class="scroll">Order</a>
+                            <a href="#order" class="scroll link_button">Order</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,6 +58,9 @@
         </div>
     </header>
     <main class="main">
+
+        <!----------------------------------------------- section_1 ----------------------------------------------->
+
         <section class="main_top">
             <div class="container">
                 <div class="top_inner">
@@ -77,6 +80,9 @@
                 </div>
             </div>
         </section>
+        
+        <!----------------------------------------------- section_2 ----------------------------------------------->
+
         <section class="section_benefits" id="benefits">
             <div class="container">
                 <div class="inner_benefits">
@@ -102,7 +108,10 @@
                 </div>
             </div>
         </section>
-        <section class="section_reviews">
+
+        <!----------------------------------------------- section_3 ----------------------------------------------->
+
+        <section class="section_reviews" id="reviews">
             <img src="images/flower.svg" alt="flower" class="section_reviews_flower">
             <div class="container">
                 <div class="inner_reviews">
@@ -129,15 +138,39 @@
                 </div>
             </div>
         </section>
-        <section class="section_order">
+
+        <!----------------------------------------------- section_4 ----------------------------------------------->
+
+        <section class="section_order" id="order">
             <div class="container">
                 <div class="inner_order">
-                    
+                        <h2 class="order_title">Order</h2>
                 </div>
             </div>
         </section>
     </main>
-    <script>
+    <footer class="footer">
+        <section class="section_contacts" id="contacts">
+            <div class="container">
+                <div class="inner_contacts">
+                    <ul class="contacts_list">
+                        <li class="contacts_item">
+                            <p class="contacts_paragraph">Have a question?</p>
+                            <p class="contacts_paragraph">Have a proposal for cooperation?</p>
+                            <p class="contacts_paragraph">Advertising questions?</p>
+                        </li>
+                        <li class="contacts_mail">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=lqrsljbsZXKFCVPvsTzWrRXrtnZnzFJbvlRjkMznvvgpxZRQnGtkCrnZLdXCdpBjxfSHCQQRpxmkXVHzp" class="contacts_mail_link">ColoRawe_support@gmail.com</a><br>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsdbhGbfcpcgWPJBvstxkBLGFHpRfBcgDRlVNQmBWLVpqpSpHKBDsqLqHJpWQjjplBLMg" class="contacts_mail_link">ColoRawe_Cooperation@gmail.com</a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=lqrsljbsZXKFCVPvsTzWrRXrtnZnzFJbvlRjkMznvvgpxZRQnGtkCrnZLdXCdpBjxfSHCQQRpxmkXVHzp" class="contacts_mail_link">ColoRawe_Advertising@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!----------------------------------------------- smooth scroll ----------------------------------------------->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             var scrollLinks = document.querySelectorAll('.scroll');
 
@@ -154,7 +187,7 @@
                 });
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

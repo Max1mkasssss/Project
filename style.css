@@ -25,6 +25,7 @@ html {
     --main-data-color: #D8D8D8;
     --adress-color: #959595;
     --button-color: #8E32C6;
+    --footer-background-color: #021635;
 
     /* fonts */
     --main-fonts: 'Roboto', sans-serif;
@@ -87,6 +88,10 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+.link_button:hover{
+    background-color: #0d5fc4;
+    transition: 0.5s;
 }
 
 .item_a {
@@ -186,7 +191,7 @@ ul {
 
 .inner_button:hover {
     background-color: #6f259d;
-    transition: 0.3s;
+    transition: 0.5s;
 
 }
 
@@ -240,7 +245,7 @@ ul {
     background-size: cover;
     max-width: 1600px;
     height: 520px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .section_reviews_flower {
@@ -256,7 +261,8 @@ ul {
     letter-spacing: 0%;
     text-align: center;
     margin-top: -340px;
-}
+    margin-bottom: 24px;
+}   
 
 .reviews_list {
     display: flex;
@@ -265,27 +271,26 @@ ul {
 }
 
 .reviews_item {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 
 }
 
 .reviews_item_1 {
     border-radius: 15px;
-    box-shadow: 0px 30px 0px -13px rgb(83, 57, 120), 0px 14px 0px -5px rgb(123, 84, 179);
+    box-shadow: 0px 14px 0px -5px rgb(123, 84, 179), 0px 25px 0px -8px rgb(83, 57, 120);
     background: linear-gradient(135.00deg, rgb(0, 229, 230) 7.292%, rgb(0, 168, 247) 26.042%, rgb(154, 118, 249) 62.5%, rgb(204, 94, 194) 100%);
+    margin-left: 18px;
 }
 
 .reviews_item_2 {
     border-radius: 15px;
-
-    box-shadow: 0px 30px 0px -13px rgb(97, 51, 124), 0px 14px 0px -5px rgb(145, 89, 177);
+    box-shadow: 0px 14px 0px -5px rgb(145, 89, 177), 0px 25px 0px -8px rgb(97, 51, 124);
     background: linear-gradient(135.00deg, rgb(255, 104, 180) 0%, rgb(255, 69, 225) 26.042%, rgb(206, 58, 255) 62.841%, rgb(137, 97, 255) 100%);
 }
 
 .reviews_item_3 {
     border-radius: 15px;
-
-    box-shadow: 0px 30px 0px -13px rgb(115, 47, 38), 0px 14px 0px -5px rgb(185, 90, 76);
+    box-shadow: 0px 14px 0px -5px rgb(185, 90, 76), 0px 25px 0px -8px rgb(115, 47, 38);
     background: linear-gradient(135.00deg, rgb(255, 225, 40) 0%, rgb(255, 155, 92) 30.208%, rgb(255, 131, 129) 63.286%, rgb(255, 84, 137) 100%);
 }
 
@@ -313,3 +318,64 @@ ul {
     margin-left: 18px;
     margin-top: -125px;
 }
+
+/*--------------------------------------------- section_4 ---------------------------------------------*/
+.section_order {
+    background-image: url(images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 509px;
+    /* outline: 2px solid red; */
+    margin-top: -40px;
+}
+
+.order_title {
+    color: var(--main-text-color);
+    font-family: var(--title-main-fonts);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 21px;
+}
+
+/*--------------------------------------------- footer ---------------------------------------------*/
+.section_contacts {
+    background-color: var(--footer-background-color);
+    max-width: 1600px;
+    height: 292px;
+    /* outline: 2px solid red; */
+    margin-top: -24px;
+}
+.contacts_list{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts_item{
+    padding-top: 45px;
+}
+.contacts_paragraph{
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.contacts_mail_link{
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-decoration-line: underline;
+    padding-top: -15px;
+    
+}
+.contacts_mail{
+    padding-top: 40px;
+}
+
+
