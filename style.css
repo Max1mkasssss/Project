@@ -89,7 +89,8 @@ ul {
     font-weight: 300;
     line-height: normal;
 }
-.link_button:hover{
+
+.link_button:hover {
     background-color: #0d5fc4;
     transition: 0.5s;
 }
@@ -172,7 +173,7 @@ ul {
     margin-bottom: 41px;
 }
 
-.inner_button {
+.inner_link_button {
     background-color: var(--button-color);
     border: none;
     border-radius: 10px;
@@ -185,7 +186,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0;
+    padding: 20px 61px;
     margin: 0;
 }
 
@@ -262,7 +263,7 @@ ul {
     text-align: center;
     margin-top: -340px;
     margin-bottom: 24px;
-}   
+}
 
 .reviews_list {
     display: flex;
@@ -330,6 +331,26 @@ ul {
     margin-top: -40px;
 }
 
+.wrapper_input {
+    display: flex;
+}
+
+.btn_wrapper_input {
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 60px;
+    background-color: var(--main-text-color);
+    color: var(--adress-color);
+    font-family: var(--main-fonts);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0%;
+    margin-left: -30px;
+    padding-right: 78px;
+}
+
 .order_title {
     color: var(--main-text-color);
     font-family: var(--title-main-fonts);
@@ -341,6 +362,87 @@ ul {
     padding-top: 21px;
 }
 
+.form_order {
+    display: block;
+    padding-left: 205px;
+    padding-right: 205px;
+}
+
+.order_search_1 {
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 690px;
+    margin-bottom: 19px;
+}
+
+.order_search_2 {
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 580px;
+    margin: 0 55px;
+    margin-bottom: 19px;
+}
+
+.order_search_3 {
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 580px;
+    margin: 0 55px;
+    margin-bottom: 19px;
+}
+
+.order_search_4 {
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 580px;
+    margin: 0 55px;
+}
+
+.search_input {
+    padding-left: 25px;
+    color: var(--adress-color);
+    font-size: 28px;
+    font-family: var(--main-fonts);
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.search_input::placeholder{
+    color: var(--adress-color);
+    font-size: 28px;
+    font-family: var(--main-fonts);
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0%;
+}
+.wrapper-button{
+    display: flex;
+    justify-content: center;
+}
+.order_button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 16px;
+    width: 248px;
+    height: 68px;
+    cursor: pointer;
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
 /*--------------------------------------------- footer ---------------------------------------------*/
 .section_contacts {
     background-color: var(--footer-background-color);
@@ -349,21 +451,25 @@ ul {
     /* outline: 2px solid red; */
     margin-top: -24px;
 }
-.contacts_list{
+
+.contacts_list {
     display: flex;
     justify-content: space-between;
 }
-.contacts_item{
+
+.contacts_item {
     padding-top: 45px;
 }
-.contacts_paragraph{
+
+.contacts_paragraph {
     color: var(--main-text-color);
     font-family: var(--main-fonts);
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
 }
-.contacts_mail_link{
+
+.contacts_mail_link {
     color: var(--main-text-color);
     font-family: var(--main-fonts);
     font-size: 24px;
@@ -372,10 +478,9 @@ ul {
     letter-spacing: 0%;
     text-decoration-line: underline;
     padding-top: -15px;
-    
+
 }
-.contacts_mail{
+
+.contacts_mail {
     padding-top: 40px;
 }
-
-
