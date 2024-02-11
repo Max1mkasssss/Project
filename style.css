@@ -211,7 +211,8 @@ ul {
     padding-top: 105px;
     margin-top: -20px;
 }
-.benefits_image_car{
+
+.benefits_image_car {
     margin-top: -20px;
     margin-left: -100px;
 }
@@ -486,7 +487,7 @@ ul {
 .section_contacts {
     background-color: var(--footer-background-color);
     max-width: 1600px;
-    height: 292px;
+    height: 365px;
     /* outline: 2px solid red; */
     margin-top: -24px;
 }
@@ -522,4 +523,31 @@ ul {
 
 .contacts_mail {
     padding-top: 40px;
+}
+
+.line_benefits_footer{
+    border-right: 2px solid var(--main-text-color);
+}
+.address_footer {
+    color: var(--main-text-color);
+    font-family: var(--main-fonts);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    padding-top: 7px;
+}
+.logo_footer{
+    margin-top: -70px;
+    margin-left: 970px;
+}
+.logo_h3_footer{
+    color: var(--main-text-color);
+    font-family: var(--logo-footer-fonts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-left: 995px;
+    margin-top: -10px;
 }
