@@ -244,6 +244,8 @@ ul {
 .line_benefits {
     border-left: 1px solid var(--main-text-color);
     border-right: 1px solid var(--main-text-color);
+    padding-left: 45px;
+    padding-right: 50px;
 }
 
 /*--------------------------------------------- section_3 ---------------------------------------------*/
@@ -345,6 +347,11 @@ ul {
 .images_card_reviews {
     border-radius: 50px;
     margin-left: 13px;
+}
+.images_card_reviews_john{
+    border-radius: 50px;
+    margin-left: 13px;
+    margin-top: -17px;
 }
 
 .reviews_item_name {
@@ -487,7 +494,7 @@ ul {
 .section_contacts {
     background-color: var(--footer-background-color);
     max-width: 1600px;
-    height: 365px;
+    height: 290px;
     /* outline: 2px solid red; */
     margin-top: -24px;
 }
@@ -507,7 +514,8 @@ ul {
     font-family: var(--main-fonts);
     font-size: 24px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 8px;
+    margin-top: 3px;
 }
 
 .contacts_mail_link {
@@ -519,6 +527,7 @@ ul {
     letter-spacing: 0%;
     text-decoration-line: underline;
     padding-top: -15px;
+    margin-right: -350px;
 
 }
 
@@ -527,7 +536,8 @@ ul {
 }
 
 .line_benefits_footer {
-    border-right: 2px solid var(--main-text-color);
+    border-right: 1px solid var(--main-text-color);
+    margin-left: 50px;
 }
 
 .address_footer {
@@ -541,7 +551,7 @@ ul {
 }
 
 .logo_footer {
-    margin-top: -70px;
+    margin-top: -50px;
     margin-left: 970px;
 }
 
