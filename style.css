@@ -32,8 +32,14 @@ html {
     --title-main-fonts: 'Playfair Display', serif;
 }
 
-.header {
+.header_fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--background-header-color);
+    animation-name: header;
+    animation-duration: 2s;
 }
 
 a {
@@ -56,7 +62,22 @@ ul {
     width: 100px;
     height: 60px;
 }
-
+.arrow-up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.arrow-up a{
+    width: 50px;
+    height: 50px;
+    background: #010f23;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    border-radius: 50px;
+    color: var(--main-text-color);
+    transition: .5s;
+}
 .logo_header {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -285,11 +306,19 @@ ul {
     padding: 0;
 }
 
+.item_name_1 {
+    margin-left: 100px;
+}
+
+.item_name_3 {
+    margin-left: -85px;
+}
+
 .line_benefits {
     border-left: 1px solid var(--main-text-color);
     border-right: 1px solid var(--main-text-color);
-    padding-left: 45px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 90px;
 }
 
 .section_reviews {
@@ -654,4 +683,28 @@ ul {
     line-height: 32px;
     margin-left: 1034px;
     margin-top: -10px;
+}
+
+.footer_link_1 {
+    margin-left: 48px;
+}
+
+.footer_link_2 {
+    margin-right: -373px;
+}
+
+.footer_link_3 {
+    margin-left: 10px;
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }

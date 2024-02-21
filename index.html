@@ -16,10 +16,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" href="images/logo.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dddb13320e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
+    <div class="arrow-up">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <header class="header header_fixed">
         <div class="container">
             <div class="header__menu">
                 <a class="logo" href="index.html">
@@ -79,7 +84,7 @@
                 <div class="inner_benefits">
                     <ul class="benefits_list">
                         <li class="benefits_item">
-                            <h3 class="items_name">Premium
+                            <h3 class="items_name item_name_1">Premium
                                 Quality</h3>
                             <img src="images/stars.svg" alt="stars">
                         </li>
@@ -90,7 +95,7 @@
                             </h3>
                         </li>
                         <li class="benefits_item">
-                            <h3 class="items_name">Fast
+                            <h3 class="items_name item_name_3">Fast
                                 <br>shipping
                             </h3>
                             <img src="images/car.svg" alt="car" class="benefits_image_car">
@@ -180,11 +185,14 @@
                         </li>
                         <li class="contacts_mail">
                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=lqrsljbsZXKFCVPvsTzWrRXrtnZnzFJbvlRjkMznvvgpxZRQnGtkCrnZLdXCdpBjxfSHCQQRpxmkXVHzp"
-                                class="contacts_mail_link" target="_blank">ColoRawe_support@gmail.com</a><br>
+                                class="contacts_mail_link footer_link_1"
+                                target="_blank">ColoRawe_support@gmail.com</a><br>
                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsdbhGbfcpcgWPJBvstxkBLGFHpRfBcgDRlVNQmBWLVpqpSpHKBDsqLqHJpWQjjplBLMg"
-                                class="contacts_mail_link" target="_blank">ColoRawe_Cooperation@gmail.com</a>
+                                class="contacts_mail_link footer_link_2"
+                                target="_blank">ColoRawe_Cooperation@gmail.com</a>
                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=lqrsljbsZXKFCVPvsTzWrRXrtnZnzFJbvlRjkMznvvgpxZRQnGtkCrnZLdXCdpBjxfSHCQQRpxmkXVHzp"
-                                class="contacts_mail_link" target="_blank">ColoRawe_Advertising@gmail.com</a>
+                                class="contacts_mail_link footer_link_3"
+                                target="_blank">ColoRawe_Advertising@gmail.com</a>
                         </li>
                         <li>
                         </li>
@@ -212,6 +220,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        window.onscroll = function showHeader() {
+            let header = document.querySelector('.header');
+
+            if (window.pageYOffset > 200) {
+                header.classList.add('header__fixed');
+            } else {
+                header.classList.remove('header__fixed');
+
+            }
+        }
     </script>
 </body>
 
